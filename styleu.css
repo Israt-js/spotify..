@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    background-color: #eedee5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 50px;
+    background-color: black;
+}
+
+nav li {
+    margin: 0 15px;
+    color: white;
+    cursor: pointer;
+}
+.nav ul li{
+    padding: 12px;
+}
+.brand img{
+    width: 44px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 60vh;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 50%;
+    border-radius: 12px;
+    background-image: url('head.jpg');
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 110px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+#myProgressber{
+    width: 20vw;
+    cursor: pointer;
+} 
+.songItemContainer{
+    margin-top: 64px;
+}
+/* .songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 65vh;
+    margin: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+.songItem img{
+    width: 30px;
+    margin: 0 10vh;
+    border-radius: 28px;
+} */
+.songItem{
+    height: 29px;
+    display: flex;
+    background-color: white;
+    width: 79vh;
+    color: black;
+    margin: 9px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.songItem img{
+    width: 30px;
+    margin: 0 10px;
+    border-radius: 24px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+    .songItem{
+        height: 20px;
+        display: flex;
+        background-color: white;
+        width: 65vh;
+        color: black;
+        margin: 14px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .songItem img{
+        width: 14px;
+        margin: 0 14px;
+        border-radius: 24px;
+    }
+    .songName{
+        width: 190px;
+    }
+
+  }
+
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: rgb(178, 227, 231);
+    }
+    .songItem{
+        height: 20px;
+        display: flex;
+        background-color: white;
+        width: 59vh;
+        color: black;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .songItem img{
+        width: 14px;
+        margin: 0 14px;
+        border-radius: 24px;
+    }
+    .songName{
+        width: 280px;
+    }
+
+  }
+
+  @media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(190, 129, 153);
+    }
+      .songItem{
+        height: 20px;
+        display: flex;
+        background-color: white;
+        width: 59vh;
+        color: black;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .songItem img{
+        width: 14px;
+        margin: 0 14px;
+        border-radius: 24px;
+    }
+    .songName{
+        width: 380px;
+    }
+    
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(128, 121, 226);
+    }
+      .songItem{
+        height: 20px;
+        display: flex;
+        background-color: white;
+        width: 41vh;
+        color: black;
+        margin: 8px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .songItem img{
+        width: 14px;
+        margin: 0 14px;
+        border-radius: 24px;
+    }
+    .songName{
+        width: 480px;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    body {
+      background-color: rgb(241, 90, 141);
+    }
+    .songItem{
+        height: 18px;
+        display: flex;
+        background-color: white;
+        width: 39vh;
+        color: black;
+        margin: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 24px;
+    }
+    .songItem img{
+        width: 14px;
+        margin: 0 14px;
+        border-radius: 24px;
+    }
+    .songName{
+        width: 580px;
+    }
+    
+  }
